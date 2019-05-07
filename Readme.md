@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артур Сафин](https://up.htmlacademy.ru/htmlcss/25/user/1002813).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
