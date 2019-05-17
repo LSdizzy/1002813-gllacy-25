@@ -18,7 +18,11 @@
        <div class="user-navigation">
          <section class="search">
            <h2 class="visually-hidden">Форма поиска</h2>
-           <!--здесь будет форма поиска-->
+           <form class="search" action="/echo" method="post">
+             <label>
+               <input type="search" name="search" value="Что ищем?">
+             </label>
+           </form>
          </section>
          <section class="login">
            <h2 class="visually-hidden">Форма входа</h2>
