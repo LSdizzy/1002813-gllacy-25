@@ -2,8 +2,9 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 700;
   color: #ffffff;
+  text-align: left;
 
   background-color: #849d8f;
 }
