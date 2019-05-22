@@ -14,6 +14,20 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: none;
+
+  background-color: #e74a35;
+  border: none;
+}
+
 .logo {
   width: 154px;
   height: 64px;
@@ -38,17 +52,12 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: #ffffff;
-
 }
 
 .site-navigation li {
   font-weight: 700;
 }
 
-.user-navigation p {
-  font-size: 14px;
-  line-height: 16px;
-}
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -71,4 +80,71 @@ a {
 .logo {
   width: 154px;
   height: 64px;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header-contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.header-contacts span  {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.info {
+  color: #323232;
+
+  background-color: #849d8f;
+  background-image: url("../img/bg-waffle.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.info-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item {
+ ??
+}
+
+.news-block-article {
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-background.jpg");
+  background-repeat: no-repeat;
+}
+
+???
+/* .news-block-subscription { */
+  background-image: url("../img/bg-subscription.png");
+}
+
+.footer-list-item {
+  list-style: none;
+}
+
+.footer-links a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
 }
