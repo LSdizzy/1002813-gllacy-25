@@ -1,10 +1,11 @@
 body {
+  margin: 0;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-  text-align: left;
 
   background-color: #849d8f;
 }
@@ -14,10 +15,46 @@ a {
 }
 
 .main-navigation {
+  color: #ffffff;
 
-
+  background-color: #849d8f;
 }
 
 .catalog-submenu {
   display: none;
+}
+
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+
+}
+
+.site-navigation li {
+  font-weight: 700;
+}
+
+.user-navigation p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #333333;
+
+  background-color: #f7f6f3;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
 }
