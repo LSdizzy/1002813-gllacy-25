@@ -214,3 +214,31 @@ a {
 .social-button {
   font-size: 0;
 }
+
+/*  -------Страница каталога-------  */
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-current {
+  border-bottom: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+}
