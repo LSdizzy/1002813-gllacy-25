@@ -28,6 +28,15 @@ a {
   border: none;
 }
 
+.button:hover,
+.button:focus {
+  background-image: none;
+  background-color: #f38166;
+}
+
+.button:active {
+}
+
 .logo {
   width: 154px;
   height: 64px;
@@ -77,6 +86,14 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.site-navigation-catalog:hover .site-navigation-link,
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  color: #333333;
+
+  background-color: #f7f6f3;
+}
+
 .logo {
   width: 154px;
   height: 64px;
@@ -89,6 +106,14 @@ a {
 
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+.search-link a:hover,
+.login-link a:hover,
+.basket-link a:hover {
+  color: #f8f7f4;
+
+}
+
 .header-contacts {
   font-size: 14px;
   line-height: 16px;
@@ -134,17 +159,58 @@ a {
   background-repeat: no-repeat;
 }
 
+.news-block-title {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.news-block-subcription-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.news-block-recipes {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.news-block-subcription-text {
+
+}
+
 ???
 /* .news-block-subscription { */
   background-image: url("../img/bg-subscription.png");
 }
 
-.footer-list-item {
-  list-style: none;
+
+.footer-links-list a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.heart {
+  font-weight: 700;
+}
+
+.footer-links-item:first-child {
+  font-weight: 700;
+  border-bottom: 1px;
 }
 
 .footer-links a {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.social-button {
+  font-size: 0;
 }
