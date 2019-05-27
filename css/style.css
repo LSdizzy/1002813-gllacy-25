@@ -182,7 +182,9 @@ img {
   height: 33px;
 }
 
-/* неню каталога */
+
+
+/* mеню каталога */
 
 .catalog-submenu {
   /* display: none; */
@@ -540,14 +542,14 @@ img {
 
 /* СТРАНИЦА КАТАЛОГА */
 
-/* хлебные крошки + контакты */
+/* хлебные крошки */
 
-.breadcrumbs-contacts {
+.breadcrumbs-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
-  min-height: 83px;
+  min-height: 52px;
 }
 
 .breadcrumbs {
@@ -560,4 +562,120 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.breadcrumbs li {
+  margin-right: 5px; на глаз
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumbs-item-current {
+  list-style: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.5);
+}
+
+/* заголовок на странице каталога */
+
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 29px;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* каталог на странице каталога */
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1172px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 83px;
+}
+
+.catalog-item {
+  position: relative;
+  width: 267px;
+  min-height: 322px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 40px;
+
+  box-sizing: border-box;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  width: 293px;
+  min-height: 405px;
+
+  background-color: rgba(247, 248, 244, 0.4);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.catalog-item img {
+  cursor: pointer;
+  border-radius: 50%;
+  order: 1;
+}
+
+.catalog-item-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+  order: 0;
+
+  text-align: center;
+}
+
+.catalog-item-title a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.catalog-item-title a:hover,
+.catalog-item-title a:focus,
+.catalog-item-title a:active {
+  color: #ffbc9e;
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.5);
+}
+
+.catalog-item-price {
+  margin: 0;
+  padding: 0;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item-price span {
+  font-size: 30px;
 }
