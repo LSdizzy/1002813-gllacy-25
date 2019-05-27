@@ -540,4 +540,24 @@ img {
 
 /* СТРАНИЦА КАТАЛОГА */
 
-/* хлебные крошки */
+/* хлебные крошки + контакты */
+
+.breadcrumbs-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  min-height: 83px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
