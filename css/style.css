@@ -26,6 +26,14 @@ img {
   margin: -1px;
 }
 
+.body-wrapper {
+  width: 1200px;
+}
+
+.wrapper {
+  width: 1200px;
+}
+
 .container {
   width: 1146px;
   margin: 0 auto;
