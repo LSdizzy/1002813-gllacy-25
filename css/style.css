@@ -26,9 +26,9 @@ img {
   margin: -1px;
 }
 
-.conteiner {
+.container {
   width: 1146px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -64,17 +64,21 @@ img {
   min-height: 64px;
 }
 
-.logo {
+.page-logo {
   width: 154px;
   height: 64px;
-  margin-right: 9px;
+  margin-right: 24px;
 }
 
 /* навигация по сайту */
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  min-height: 50px;
+
   margin: 0;
+  margin-top: 14px;
   padding: 0;
 
   list-style: none;
@@ -97,14 +101,15 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 
-.site-navigation-link,
+
+
 .site-navigation-link:hover,
 .site-navigation-link:focus,
-.site-navigation-catalog:hover {
+.site-navigation-catalog:hover .site-navigation-link {
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 13px;
   padding-right: 13px;
 
   color: #323232;
@@ -121,7 +126,7 @@ img {
   padding-left: 14px;
   padding-right: 13px;
 
-  background-color: f8f7f4;
+  background-color: #f8f7f4;
 
   border-bottom: none;
   border-radius: 16px;
@@ -131,16 +136,19 @@ img {
 
 .user-navigation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   width: 282px;
   margin: 0;
+  margin-top: 14px;
+  margin-left: 0 auto;
   padding: 0;
 
   list-style: none;
 }
 
-.user-navigation a {
+.user-navigation-item a {
   display: block;
 
   font-size: 14px;
@@ -153,41 +161,61 @@ img {
   border-radius: 16px;
 }
 
-.serach,
+.header-serach,
 .login-link,
 .basket {
+  position: relative;
   height: 32px;
 }
 
 /* поиск */
 
+.search {
+  display: none;
+}
+
 .search a {
+  display: none;
   width: 33px;
   height: 33px;
 
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* Вход */
 
 .login a {
-  width: 93px;
-  height: 32px;
+  position: relative;
+
+  padding-left: 44px;
+  padding-right: 16px;
 }
 
 /* корзина */
 
 .basket a {
-  width: 100px;
+  position: relative;
+
+  width: 117px;
   height: 33px;
+  padding-left: 45px;
+
+  box-sizing: border-box;
 }
 
 
 
 /* mеню каталога */
 
+.site-navigation-catalog {
+  position: relative;
+  min-height: 40px;
+}
+
 .catalog-submenu {
-  /* display: none; */
+  display: none;
+  position: absolute;
   margin: 0;
   padding: 0;
   min-width: 143px;
@@ -198,7 +226,17 @@ img {
   list-style: none;
 }
 
+.site-navigation-catalog:hover .catalog-submenu,
+.site-navigation-catalog:focus .catalog-submenu {
+  display: block;
+}
+
 .catalog-submenu a {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -209,6 +247,8 @@ img {
   padding-top: 13px;
   padding-bottom: 14px;
   font-weight: 700;
+
+  border-radius: 5px;
 }
 
 .catalog-submenu a:hover,
@@ -219,6 +259,8 @@ img {
 .catalog-submenu a:active {
   background-color: #f6b5a5;
 }
+
+
 
 /* контакты */
 
@@ -247,16 +289,16 @@ img {
 /* особености */
 
 .info {
-  min-height: 306px;
   margin-bottom: 40px;
+  padding-top: 29px;
   padding-left: 20px;
   padding-right: 33px;
-  padding-bottom: 16px;
+  padding-bottom: 26px;
 
   color: #323232;
 
   background-color: #ede0c4;
-  background-image: url("img/bg-waffle.lpg");
+  background-image: url("img/bg-waffle.jpg");
   background-repeat: repeat;
   border-radius: 16px;
 }
@@ -284,8 +326,7 @@ img {
   position: relative;
   width: 475px;
   padding-left: 56px;
-  padding-top: 16px;
-  margin-top: 10px;
+  padding-top: 26px;
 }
 
 /* статьи */
@@ -325,6 +366,7 @@ img {
 .news-block-recipes {
   width: 279px;
   margin: 0;
+  padding: 0;
   padding-top: 13px;
 }
 
@@ -458,7 +500,7 @@ img {
 
   margin: 0;
   padding: 0;
-  height: 35px;
+  min-height: 46px;
 
   list-style: none;
 }
@@ -480,6 +522,7 @@ img {
 .footer-links a:focus,
 .footer-links a:active {
   color: #ffbc9e;
+
   border-bottom: 1px solid rgba(255, 188, 158, 0.5);
 }
 
@@ -491,6 +534,7 @@ img {
 
   width: 189px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   font-size: 12px;
@@ -499,19 +543,25 @@ img {
   color: #fefefe;
 }
 
+.footer-copyright-text {
+  margin: 0;
+}
+
 /* всплываеющее окно входа */
 
 .login-form {
+  display: none;
   position: relative;
   width: 277px;
-  height: 214px;
+  min-height: 214px;
   padding-left: 19px;
   padding-right: 17px;
+  padding-bottom: 22px;
 }
 
 .login-password-info {
   display: block;
-  /* position: absolute; */
+  position: absolute;
   margin: 0;
   padding: 0;
 
@@ -519,7 +569,7 @@ img {
 }
 
 .login-password-info a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   color: #323232;
 
@@ -535,10 +585,11 @@ img {
 }
 
 .login-button {
-  /* position: absolute; */
+  position: absolute;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 
 /* СТРАНИЦА КАТАЛОГА */
 
