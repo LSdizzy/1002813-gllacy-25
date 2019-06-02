@@ -159,6 +159,8 @@ img {
 .user-navigation-item a {
   display: block;
 
+  width: 33px;
+  height: 33px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -183,11 +185,12 @@ img {
 }
 
 .search a {
-  display: none;
+  /* display: none; */
   width: 33px;
   height: 33px;
 
   text-align: center;
+
   box-sizing: border-box;
 }
 
