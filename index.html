@@ -10,6 +10,11 @@
 </head>
 
 <body>
+
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
   <div class="body-wrapper">
     <div class="wrapper">
       <header class="header container">
@@ -89,6 +94,33 @@
     <main class="site-main wrapper">
 
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+
+      <div class="container">
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product1">Первый</label>
+            <label for="product2">Второй</label>
+            <label for="product3">Третий</label>
+          </div>
+          <h2 class="visually-hidden">Специальное предложение</h2>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+
+
+        </section>
+      </div>
 
       <div class="container">
         <section class="info">
