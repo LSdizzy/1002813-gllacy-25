@@ -47,70 +47,76 @@
         </ul>
         <div class="user-navigation">
 
-          <section class="user-navigation-item header-search">
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <a aria-label="Поиск"></a>
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <label class="search-label">
-                <input class="serach-field" type="search" name="search" placeholder="Что ищем?">
-              </label>
-            </form>
+          <section class="user-navigation-item search">
+            <section class="popup popup-serch">
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <a aria-label="Поиск"></a>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="search-label">
+                  <input class="serach-field" type="search" name="search" placeholder="Что ищем?">
+                </label>
+              </form>
+            </section>
           </section>
 
           <section class="user-navigation-item login">
-            <h2 class="visually-hidden">Форма входа</h2>
-            <a class="login-link" aria-label="Личный кабинет">Вход</a>
-            <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
-              <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин" required>
-              </p>
-              <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль" required>
-              </p>
-              <button type="button login-button" type="submit">Войти</button>
-              <p class="login-password-info">
-                <a href="#">Я забыл пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
-              <a href="#">Вход</a>
-            </form>
+            <section class="popup popup-login">
+              <h2 class="visually-hidden">Форма входа</h2>
+              <a class="login-link" aria-label="Личный кабинет">Вход</a>
+              <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="user-login">Логин</label>
+                  <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин" required>
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль" required>
+                </p>
+                <button type="button login-button" type="submit">Войти</button>
+                <p class="login-password-info">
+                  <a href="#">Я забыл пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+                <a href="#">Вход</a>
+              </form>
+            </section>
           </section>
 
           <section class="user-navigation-item basket empty">
-            <h2 class="visually-hidden">Форма корзины</h2>
-            <a href="#" >
-              <span class="basket-quantity">Пусто</span>
-            </a>
-            <div class="basket-table">
-              <table class="basket-table">
-                <tr class="basket-table-item">
-                  <td class="column-1 cell">
-                    <a class="close" href="#"><span class="visually-hidden">Отменить</span></a>
-                  </td>
-                  <td class="column-2 cell">
-                    <img src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                  </td>
-                  <td class="column-3 cell">Пломбир с апельсиновым джемом</td>
-                  <td class="column-4 cell">1,5 кг &times; 200 руб.</td>
-                  <td class="column-5 cell">300 руб.</td>
-                </tr>
-                <tr class="basket-table-item">
-                  <td>
-                    <a class="close" href="#"><span class="visually-hidden">Отменить</span></a>
-                  </td>
-                  <td>
-                    <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  </td>
-                  <td class="column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="column-4">1,5 кг &times; 300 руб.</td>
-                  <td class="column-5">450 руб.</td>
-                </tr>
-              </table>
-              <b class="basket-total">Итого:750 руб.</b>
-              <a class="basket-button" href="#">Оформить заказ</a>
-            </div>
+            <section class="popup popup-basket">
+              <h2 class="visually-hidden">Форма корзины</h2>
+              <a href="#" >
+                <span class="basket-quantity">Пусто</span>
+              </a>
+              <div class="basket-table">
+                <table class="basket-table">
+                  <tr class="basket-table-item">
+                    <td class="column-1 cell">
+                      <a class="close" href="#"><span class="visually-hidden">Отменить</span></a>
+                    </td>
+                    <td class="column-2 cell">
+                      <img src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </td>
+                    <td class="column-3 cell">Пломбир с апельсиновым джемом</td>
+                    <td class="column-4 cell">1,5 кг &times; 200 руб.</td>
+                    <td class="column-5 cell">300 руб.</td>
+                  </tr>
+                  <tr class="basket-table-item">
+                    <td>
+                      <a class="close" href="#"><span class="visually-hidden">Отменить</span></a>
+                    </td>
+                    <td>
+                      <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </td>
+                    <td class="column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="column-4">1,5 кг &times; 300 руб.</td>
+                    <td class="column-5">450 руб.</td>
+                  </tr>
+                </table>
+                <b class="basket-total">Итого:750 руб.</b>
+                <a class="basket-button" href="#">Оформить заказ</a>
+              </div>
+            </section>
           </section>
         </div>
       </nav>
