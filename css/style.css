@@ -371,7 +371,21 @@ img {
   line-height: 41px;
 }
 
-.present p
+.present p {
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.present-button {
+  position: absolute;
+  right: 21px;
+  bottom: 23px;
+}
 
 .berry {
   background-color: #5e0f1f;
