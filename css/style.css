@@ -393,6 +393,17 @@ img {
   padding: 0;
 }
 
+.catalog-item.hit::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.svg");
+}
 
 /* особености */
 
@@ -805,6 +816,7 @@ img {
   position: relative;
   width: 267px;
   min-height: 322px;
+  padding-top: 6px;
   padding-left: 13px;
   padding-right: 13px;
   padding-bottom: 40px;
