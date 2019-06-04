@@ -215,12 +215,8 @@ img {
 
 /* поиск */
 
-.search {
-  display: none;
-}
 
 .search a {
-  /* display: none; */
   width: 33px;
   height: 33px;
 
@@ -614,6 +610,19 @@ img {
 }
 
 /* всплываеющее окно входа */
+
+/* форма поиска */
+
+.popup-search {
+  display: none;
+  position: absolute;
+}
+
+.search-form {
+  display: none;
+}
+
+/* форма входа */
 
 .login-form {
   display: none;
