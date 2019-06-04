@@ -46,11 +46,11 @@ img {
 }
 
 .body-wrapper::before {
-  background-image: url("img/slider-item2.png");
+  background-image: url("../img/slider-item2.png");
 }
 
 .body-wrapper::after {
-  background-image: url("img/slider-item3.png");
+  background-image: url("../img/slider-item3.png");
 }
 
 .wrapper {
@@ -349,6 +349,17 @@ img {
   margin-bottom: 40px;
 }
 
+.berry {
+  background-color: #5e0f1f;
+  background-image: url("../img/bg-berry.jpg");
+  background-repeat: no-repeat;
+}
+
+.chokolate {
+  background-color: #3e2519;
+  background-image: url("../img/bg-chokolate.jpg");
+  background-repeat: no-repeat;
+}
 
 
 /* особености */
@@ -363,7 +374,7 @@ img {
   color: #323232;
 
   background-color: #ede0c4;
-  background-image: url("img/bg-waffle.jpg");
+  background-image: url("../img/bg-waffle.jpg");
   background-repeat: repeat;
   border-radius: 16px;
 }
@@ -417,7 +428,7 @@ img {
   color: #323232;
 
   background-color: #ffffff;
-  background-image: url("img/strawberry-background.jpg");
+  background-image: url("../img/strawberry-background.jpg");
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -460,7 +471,7 @@ img {
   min-height: 220px;
   box-sizing: border-box;
 
-  background-image: url("img/bg-subcription.png");
+  background-image: url("../img/bg-subcription.png");
   background-repeat: repeat;
   border-radius: 15px;
 }
