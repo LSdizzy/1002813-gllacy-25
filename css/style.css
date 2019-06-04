@@ -343,11 +343,35 @@ img {
 
 /* Подарки */
 
+.presents {
+  font-weight: 700;
+}
+
 .half-block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
+.present {
+  position: relative;
+  width: 560px;
+  min-height: 229px;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+}
+
+.present-title {
+  margin: 0;
+  margin-left:20px;
+  margin-top: 23px;
+
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.present p
 
 .berry {
   background-color: #5e0f1f;
