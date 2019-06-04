@@ -341,6 +341,16 @@ img {
   text-align: right;
 }
 
+/* Подарки */
+
+.half-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+
+
 /* особености */
 
 .info {
