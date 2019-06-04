@@ -207,7 +207,7 @@ img {
 }
 
 .serach,
-.login-link,
+.login,
 .basket {
   position: absolute;
   height: 32px;
@@ -811,4 +811,11 @@ img {
 
 .catalog-item-price span {
   font-size: 30px;
+}
+
+/* модальные окна */
+
+
+.modal-feedback {
+  display: none;
 }
