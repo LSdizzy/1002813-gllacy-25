@@ -399,6 +399,21 @@ img {
   background-repeat: no-repeat;
 }
 
+/* Хиты */
+
+.hits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 1172px;
+
+  margin: 0 auto;
+  /* margin-bottom: 32px; */
+  padding: 0;
+}
+
 
 /* особености */
 
