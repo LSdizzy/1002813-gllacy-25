@@ -157,7 +157,7 @@ img {
 
 .user-navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   width: 282px;
@@ -188,7 +188,6 @@ img {
 .serach,
 .login,
 .basket {
-  position: absolute;
   height: 32px;
 }
 
@@ -386,23 +385,32 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
 
-  width: 1172px;
+  width: 1146px;
 
   margin: 0 auto;
-  /* margin-bottom: 32px; */
   padding: 0;
 }
 
-.catalog-item.hit::before {
+.hit {
+  margin-right: 22px;
+  margin-bottom: 35px;
+}
+
+.hit:nth-child(4n+1) {
+  margin-right: 0;
+}
+
+.hit::after {
   content: "";
 
   position: absolute;
-  top: 6px;
-  left: 13px;
+  top: 0px;
+  left: 0px;
   width: 61px;
   height: 61px;
 
   background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
 }
 
 /* особености */
@@ -514,7 +522,7 @@ img {
   min-height: 220px;
   box-sizing: border-box;
 
-  background-image: url("../img/bg-subcription.png");
+  background-image: url("../img/bg-subscription/png");
   background-repeat: repeat;
   border-radius: 15px;
 }
@@ -806,27 +814,40 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 1172px;
+  width: 1146px;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 83px;
 }
 
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 1146px;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
 .catalog-item {
   position: relative;
   width: 267px;
-  min-height: 322px;
-  padding-top: 6px;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-bottom: 40px;
 
   box-sizing: border-box;
 }
 
 
-.catalog-item:hover,
-.catalog-item:focus {
+.catalog-item:hover::before,
+.catalog-item:focus::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  left: -13px;
+  top: -10px;
   z-index: 1;
   width: 293px;
   min-height: 405px;
@@ -838,16 +859,18 @@ img {
 
 .catalog-item:hover .item-button,
 .catalog-item:focus .item-button {
-  display: inline-block;
-  vertical-align: top;
   position: absolute;
-  z-index: 0;
+  display: block;
+  /* left: 10%; */
+  bottom: -55px;
+  z-index: 1;
 }
 
 .item-button {
   display: none;
   position: absolute;
-  left: 46px;
+
+  left: 33px;
   bottom: 22px;
   padding-left: 17px;
   padding-right: 17px;
@@ -887,6 +910,9 @@ img {
 }
 
 .catalog-item-price {
+  position: absolute;
+  left: 0px;
+  bottom: 70px;
   margin: 0;
   padding: 0;
 
