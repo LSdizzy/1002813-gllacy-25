@@ -57,9 +57,8 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  opacity: 99%;
-  box-shadow: 0px 2px 2px 0px rgb(208, 112, 88, 0.2);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
 
   border: none;
   border-radius: 32px;
@@ -68,9 +67,16 @@ img {
 .button:hover,
 .button:focus {
   background-image: none;
-  background-color: #d07058;
-  box-shadow: 0px 1px 2px 0px #ac1000;
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
+
+.button:active {
+  background-image: none;
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+
 
 /* Навигация, хедер */
 
@@ -106,8 +112,8 @@ img {
 
 .site-navigation-link {
   display: block;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 9px;
+  margin-bottom: 10px;
   margin-left: 14px;
   margin-right: 13px;
 
@@ -121,14 +127,12 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 
-
-
 .site-navigation-link:hover,
 .site-navigation-link:focus,
 .site-navigation-catalog:hover .site-navigation-link {
   margin: 0;
   padding-top: 9px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   padding-left: 14px;
   padding-right: 13px;
   margin-bottom: 5px;
@@ -143,14 +147,14 @@ img {
 .site-navigation-link:active {
   margin: 0;
   padding-top: 9px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   padding-left: 14px;
   padding-right: 13px;
 
   background-color: #f8f7f4;
 
   border-bottom: none;
-  box-shadow: inset 0px 2px 1px 0 #696969;
+  box-shadow: inset 0px 2px 1px 0px #696969;
   background-color: #ededed;
   border-radius: 16px;
 }
@@ -160,7 +164,6 @@ img {
 .user-navigation {
   display: flex;
   justify-content: flex-end;
-  /* flex-wrap: wrap; */
 
   width: 282px;
   margin: 0;
@@ -270,8 +273,8 @@ img {
 
 .catalog-submenu a {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 20px;
 
   font-size: 14px;
@@ -280,15 +283,28 @@ img {
   color: #323232;
 }
 
+
 .catalog-submenu-item:first-child a {
   padding-top: 13px;
   padding-bottom: 14px;
   font-weight: 700;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
+
+
+.catalog-submenu-item:last-child a {
+  padding-bottom: 14px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
 
 .catalog-submenu a:hover,
 .catalog-submenu a:focus {
-  background-color: #fbdeb8;
+  background-color: #fbded7;
 }
 
 .catalog-submenu a:active {
@@ -343,6 +359,7 @@ img {
 }
 
 .present-title {
+  padding: 0;
   margin: 0;
   margin-left:20px;
   margin-top: 23px;
@@ -365,7 +382,22 @@ img {
   position: absolute;
   right: 21px;
   bottom: 23px;
+
+  box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
+  background-image: linear-gradient(to top, #ca3824, #f26843);
 }
+
+.present-button:hover,
+.present-button:focus {
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.present-button:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));1
+}
+
 
 .berry {
   background-color: #5e0f1f;
@@ -444,7 +476,6 @@ img {
 .info-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -623,7 +654,7 @@ img {
 /* информация для клиентов */
 
 .footer-links {
-  width: 268px;
+  width: 305px;
   margin-top: 10px;
   column-count: 2;
 }
@@ -632,7 +663,7 @@ img {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-
+  width: 305px;
   margin: 0;
   padding: 0;
   /* padding-bottom: 30px; */
@@ -642,7 +673,7 @@ img {
 }
 
 .footer-links-item {
-  display: block;
+  /* display: flex; */
   min-width: 162px;
 }
 
