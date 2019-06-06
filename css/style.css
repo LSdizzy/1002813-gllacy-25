@@ -131,6 +131,7 @@ img {
   padding-bottom: 8px;
   padding-left: 14px;
   padding-right: 13px;
+  margin-bottom: 5px;
 
   color: #323232;
 
@@ -281,8 +282,6 @@ img {
   padding-top: 13px;
   padding-bottom: 14px;
   font-weight: 700;
-
-  border-radius: 5px;
 }
 
 .catalog-submenu a:hover,
