@@ -144,6 +144,21 @@ img {
   border-radius: 16px;
 }
 
+.site-navigation-current .site-navigation-link {
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 13px;
+  margin-bottom: 5px;
+
+  color: #ffffff;
+
+  background-color: #d07058;
+  border-bottom: none;
+  border-radius: 16px;
+}
+
 .site-navigation-link:active {
   margin: 0;
   padding-top: 9px;
@@ -272,6 +287,7 @@ img {
   display: block;
 }
 
+
 .catalog-submenu a {
   display: block;
   padding-top: 7px;
@@ -312,7 +328,21 @@ img {
   background-color: #f6b5a5;
 }
 
+.catalog-submenu-item-current a {
+  color: #ffffff;
 
+  background-color: #d07058;
+}
+
+.catalog-submenu-item-current a:hover,
+.catalog-submenu-item-current a:focus,
+.catalog-submenu-item-current a:active {
+  cursor: default;
+
+  color: #ffffff;
+
+  background-color: #d07058;
+}
 
 /* контакты */
 
@@ -880,7 +910,10 @@ img {
   width: 267px;
 
   box-sizing: border-box;
+
+  list-style: none;
 }
+
 
 
 .catalog-item:hover::before,
@@ -904,7 +937,6 @@ img {
 .catalog-item:focus .item-button {
   position: absolute;
   display: block;
-  /* left: 10%; */
   bottom: -55px;
   z-index: 1;
 }
