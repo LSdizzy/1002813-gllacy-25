@@ -901,13 +901,14 @@ img {
 
   width: 1146px;
 
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
 .catalog-item {
   position: relative;
   width: 267px;
+  margin-bottom: 40px;
 
   box-sizing: border-box;
 
