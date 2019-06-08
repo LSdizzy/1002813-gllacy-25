@@ -39,7 +39,9 @@ img {
   /* padding-bottom: 40px; */
 }
 
-
+.catalog-container {
+  margin-top: -17px;
+}
 
 /* кнопки */
 
@@ -134,7 +136,7 @@ img {
   padding-top: 9px;
   padding-bottom: 7px;
   padding-left: 14px;
-  padding-right: 13px;
+  padding-right: 14px;
   margin-bottom: 5px;
 
   color: #323232;
@@ -592,7 +594,7 @@ img {
   min-height: 220px;
   box-sizing: border-box;
 
-  background-image: url("../img/bg-subscription/png");
+  background-image: url("../img/bg-subscription.png");
   background-repeat: repeat;
   border-radius: 15px;
 }
@@ -822,13 +824,6 @@ img {
 
 /* хлебные крошки */
 
-.breadcrumbs-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  min-height: 52px;
-}
 
 .breadcrumbs {
   display: flex;
@@ -843,7 +838,11 @@ img {
 }
 
 .breadcrumbs li {
-  margin-right: 5px; на глаз
+  margin-right: 7px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs a {
@@ -863,7 +862,7 @@ img {
 .breadcrumbs a:active {
   color: #ffbc9e;
 
-  border-bottom: 1px solid rgba(255, 188, 158, 0.5);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.5  );
 }
 
 /* заголовок на странице каталога */
@@ -871,7 +870,7 @@ img {
 .catalog-title {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-bottom: 29px;
 
   font-size: 35px;
