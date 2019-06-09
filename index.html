@@ -49,10 +49,10 @@
 
           <section class="user-navigation-item search">
             <h2 class="visually-hidden">Форма поиска</h2>
-            <a aria-label="Поиск"></a>
+            <a class="search-link" aria-label="Поиск"></a>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="search-label">
-                <input class="serach-field" type="search" name="search" placeholder="Что ищем?">
+                <input class="search-field" type="search" name="search" placeholder="Что ищем?">
               </label>
             </form>
           </section>
@@ -61,26 +61,25 @@
             <h2 class="visually-hidden">Форма входа</h2>
             <a class="login-link" aria-label="Личный кабинет">Вход</a>
             <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
-              <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
+              <p class="login-form-field">
+                <label class="visually-hidden" for="user-login">Электроная почта</label>
                 <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин" required>
               </p>
-              <p>
+              <p class="password-form-field">
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль" required>
               </p>
-              <button type="button login-button" type="submit">Войти</button>
-              <p class="login-password-info">
-                <a href="#">Я забыл пароль?</a>
-                <a href="#">Новая регистрация</a>
+              <button class="button login-button" type="submit">Войти</button>
+              <p class="login-password-info-container">
+                <a class="login-password-info" href="#">Я забыл пароль?</a>
+                <a class="login-password-info" href="#">Новая регистрация</a>
               </p>
-              <a href="#">Вход</a>
             </form>
           </section>
 
           <section class="user-navigation-item basket empty">
             <h2 class="visually-hidden">Форма корзины</h2>
-            <a href="#" >
+            <a class="basket-link" href="#" >
               <span class="basket-quantity">Пусто</span>
             </a>
             <div class="basket-table">
@@ -180,10 +179,10 @@
         <h2 class="visually-hidden">Информация о магазине</h2>
         <b class="info-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <ul class="info-list">
-          <li class="info-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="info-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="info-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li class="info-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li class="info-item icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="info-item cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="info-item leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="info-item termometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -215,10 +214,10 @@
       <div class="footer-social">
         <h3 class="visually-hidden">Соцсети</h3>
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фэйсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button twetter" href="#">  <span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фэйсбук</span></a></a></li>
+          <li><a class="social-button VK" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </ul>
       </div>
       <div class="footer-links">
