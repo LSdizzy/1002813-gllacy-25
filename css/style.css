@@ -28,7 +28,28 @@ img {
 }
 
 .body-wrapper {
-  /* width: 1200px; */
+  width: auto;
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.body-wrapper::before,
+.body-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.body-wrapper::before {
+  background-image: url("img/slider-item2.png");
+}
+
+.body-wrapper::after {
+  background-image: url("img/slider-item3.png");
 }
 
 .wrapper {
@@ -369,6 +390,90 @@ img {
   text-align: right;
 }
 
+/* Слайдер */
+
+.slider {
+  position: relative;
+
+  padding-top: 321px;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#product-1:checked ~ .body-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.png");
+}
+
+#product-2:checked ~ .body-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider-item2.png");
+}
+
+#product-3:checked ~ .body-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-item3.png");
+}
+
+
+#product-1:checked ~ .body-wrapper #slide1,
+#product-2:checked ~ .body-wrapper #slide2,
+#product-3:checked ~ .body-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .body-wrapper label[for="product-1"],
+#product-2:checked ~ .body-wrapper label[for="product-2"],
+#product-3:checked ~ .body-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
 /* Подарки */
 
 .presents {
@@ -549,9 +654,6 @@ img {
   background-repeat: no-repeat;
   background-position: 0px 8px;
 }
-
-/* Слайдер */
-
 
 /* статьи */
 
