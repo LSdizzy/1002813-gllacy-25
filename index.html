@@ -79,7 +79,7 @@
 
           <section class="user-navigation-item basket empty">
             <h2 class="visually-hidden">Форма корзины</h2>
-            <a class="basket-link" href="#" >
+            <a class="basket-link q" href="#" >
               <span class="basket-quantity">Пусто</span>
             </a>
             <div class="basket-table">
@@ -238,12 +238,13 @@
   </div>
 
   <section class="modal modal-feedback">
-    <h2>Обратная связь</h2>
-    <p>Мы обязательно вам ответим!</p>
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <p class="feedback-title">Мы обязательно вам ответим!</p>
+    <span class="close"></span>
     <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="name"></label>
-        <input id="name" class="user-name" type="text" name="name" placeholder="Как вас зовут?">
+        <input id="name" class="user-name" type="text" name="name" placeholder="Как вас зовут?" >
       </p>
       <p>
         <label class="visually-hidden" for="email"></label>
@@ -253,7 +254,7 @@
         <label class="visually-hidden" for="textarea-text"></label>
         <textarea id="textarea-text" class="textarea" name="textarea" placeholder="Напишите что-нибудь..." rows="4" cols="50"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button feedback-button" type="submit">Отправить</button>
     </form>
   </section>
 
