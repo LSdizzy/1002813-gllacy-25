@@ -274,7 +274,7 @@ img {
 
 /* корзина */
 
-.basket a {
+.basket-link {
   position: relative;
 
   line-height: 2.5;
@@ -290,8 +290,8 @@ img {
   box-sizing: border-box;
 }
 
-.basket a:hover,
-.basket a:focus {
+.basket-link:hover,
+.basket-link:focus {
   color: #323232;
 
   background-image: url("../img/basket-hover.svg");
@@ -1121,9 +1121,87 @@ img {
 
 /* форма корзины */
 
-.basket-table {
-  display: none;
+.basket-container {
   position: absolute;
+  right: 21px;
+
+  padding-top: 20px;
+  width: 539px;
+  min-height: 242px;
+
+  font-size: 13px;
+  line-height: 16px;
+  text-align: right;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4)
+}
+
+.basket-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid #cacac7;
+  margin-bottom: 14px;
+}
+
+/* .basket-table-item { */
+  min-height: 53px;
+}
+
+.cell {
+  vertical-align: top;
+  padding-top: 11px;
+  text-align: center;
+}
+
+.basket-close::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+
+  background-image: url(../img/basket-close.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.cell {
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+
+.column-1 {
+  width: 41px;
+  padding: 0;
+  margin: 0;
+}
+
+.column-2 {
+  width: 33px;
+}
+
+.column-3 {
+  width: 215px;
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 11px;
+}
+
+.column-4 {
+  width: 93px;
+  padding-top: 11px;
+}
+
+.column-5 {
+  width: 50px;
+  padding-left: 29px;
+  padding-right: 33px;
+  padding-top: 11px;
 }
 
 /* СТРАНИЦА КАТАЛОГА */
