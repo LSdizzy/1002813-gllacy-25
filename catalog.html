@@ -132,7 +132,110 @@
 
       <h1 class="catalog-title">Сливочное мороженое</h1>
 
-      <!--здесь будет форма-->
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="filter-fieldset filter-fieldset-sort">
+            <legend>Сортировка:</legend>
+            <div class="filter-select-wrapper">
+              <select class="filter-select" name="sorting">
+                <option value="popular" selected>по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class=" filter-fieldset filter-price">
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <div class="filter-range">
+             <div class="range-controls">
+              <div class="scale">
+                 <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+             </div>
+            </div>
+         </fieldset>
+
+          <fieldset class="filter-fieldset filter-fat">
+            <legend>Жирность:</legend>
+            <div class="filter-fat-wrapper">
+              <ul class="filter-list filter-list-fat">
+                <li>
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="fat" id="no-fat">
+                  <label class="filter-label filter-label-radio" for="no-fat">
+                    0%
+                  </label>
+                </li>
+                <li>
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="10-fat" id="10-fat" checked>
+                  <label class="filter-label filter-label-radio" for="10-fat">
+                    до 10%
+                  </label>
+                </li>
+                <li>
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="30-fat" id="30-fat">
+                  <label class="filter-label filter-label-radio" for="30-fat">
+                    до 30%
+                  </label>
+                </li>
+                <li>
+                  <input class="filter-input filter-input-radio visually-hidden" type="radio" name="over-fat" id="over-fat">
+                  <label class="filter-label filter-label-radio" for="over-fat">
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-fieldset filter-fildset-filling">
+            <legend class="filter-legend">Наполнители:</legend>
+            <div class="filter-filling-wrapper">
+              <ul class="filter-list filter-list-filling">
+                <li class="filter-item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="chokolate" id="chokolate" checked>
+                  <label class="filter-label-checkbox" for="chokolate">
+                    шоколадные
+                  </label>
+                </li>
+                <li class="filter-item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="chokolate" id="sugar" checked>
+                  <label class="filter-label-checkbox" for="sugar">
+                    сахарные присыпки
+                  </label>
+                </li>
+                <li class="filter-item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="chokolate" id="fruit">
+                  <label class="filter-label-checkbox" for="fruit">
+                    фрукты
+                  </label>
+                </li>
+                <li class="filter-item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="chokolate" id="syrup">
+                  <label class="filter-label-checkbox" for="syrup">
+                    сиропы
+                  </label>
+                </li>
+                <li class="filter-item-checkbox">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="chokolate" id="jam">
+                  <label class="filter-label-checkbox" for="jam">
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <button class="filter-button" type="submit">Применить</button>
+
+        </form>
+      </section>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталок мороженого</h2>
         <ul class="catalog-list">
@@ -171,7 +274,7 @@
           <li class="catalog-item">
             <img class="catalog-item-img" src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             <p class="catalog-item-price">325&#8381;<span>/кг</span></p>
-            <h3 class="catalog-item-title fix1">
+            <h3 class="catalog-item-title catalog-item-title-fix1">
               <a href="#">Сливочное с брусничным джемом</a>
             </h3>
             <a class="button item-button" href="#">Быстрый просмотр</a>
@@ -203,7 +306,7 @@
           <li class="catalog-item">
             <img class="catalog-item-img" src="img/product-9.jpg" width="267" height="267" alt="Сливчно-ванильное с кусочками шоколада">
             <p class="catalog-item-price">440&#8381;<span>/кг</span></p>
-            <h3 class="catalog-item-title fix2">
+            <h3 class="catalog-item-title catalog-item-title-fix2">
               <a href="#">Сливчно-ванильное с кусочками шоколада</a>
             </h3>
             <a class="button item-button" href="#">Быстрый просмотр</a>
@@ -226,8 +329,8 @@
           </li>
           <li class="catalog-item">
             <img class="catalog-item-img" src="img/product-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <p class="catalog-item-price">420&#8381;<span>/кг</span></p>
-            <h3 class="catalog-item-title fix3">
+            <p class="catalog-item-price catalog-item-price-fix">420&#8381;<span>/кг</span></p>
+            <h3 class="catalog-item-title catalog-item-title-fix3">
               <a href="#">Сливочное с мятным сиропом</a>
             </h3>
             <a class="button item-button" href="#">Быстрый просмотр</a>
