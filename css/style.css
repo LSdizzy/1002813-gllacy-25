@@ -1329,13 +1329,325 @@ img {
 .catalog-title {
   margin: 0;
   padding: 0;
-  margin-top: 4px;
+  margin-top: 3px;
   margin-bottom: 29px;
 
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
+}
+
+/* ФИЛЬТРЫ */
+
+/* сортировка */
+
+.fiilters {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  min-width: 131px;
+  width: 860px;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-form legend {
+  padding-bottom: 6px;
+  padding-left: 16px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter-select-wrapper {
+  position: relative;
+
+  cursor: pointer;
+
+  background-image: url("../img/icon-dawn-white.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-position: 178px;
+}
+
+.filter-select-wrapper:hover,
+.filter-select-wrapper:focus {
+  cursor: pointer;
+
+  color: #323232;
+}
+
+.filter-select {
+  box-sizing: border-box;
+  width: 193px;
+
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  padding-right: 17px;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.filter option {
+  font-weight: 500;
+}
+
+.filter-select:hover {
+  color: #323232;
+
+  background-image: url("../img/icon-down-black.svg");
+  background-repeat: no-repeat;
+  background-position: 178px;
+
+  outline: none;
+}
+
+.filter-select:focus {
+  color: #323232;
+
+  background-image: url("../img/icon-down-black.svg");
+  background-repeat: no-repeat;
+  background-position: 178px;
+  background-color: #ffffff;
+
+  outline: none;
+}
+
+/* по цене */
+
+.filter-range {
+  width: 220px;
+  height: 37px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.range-controls {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.range-controls .scale {
+  height: 4px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  width: 101px;
+  height: 4px;
+  margin-left: 22px;
+
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  top: 218px;
+
+  background-image: url(../img/filter-button.svg);
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+}
+
+.range-toggle.range-toggle-min {
+  left: 337px;
+}
+
+.range-toggle.range-toggle-max {
+  left: 435px;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  cursor: pointer;
+
+  transform: scale(1.1);
+}
+
+/* фильтр по жирности */
+
+.filter-fat {
+  width: 415px;
+}
+
+.filter-fat-wrapper {
+  padding-top: 10px;
+  padding-bottom: 9px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.filter-label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.filter-label-radio {
+  padding-left: 30px;
+}
+
+.filter-label-radio::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 25px;
+  top: -2px;
+  left: -7px;
+
+  opacity: 0.8;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-label-radio:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio:checked + .filter-label-radio::before{
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-radio:checked + .filter-label-radio:hover::after {
+  opacity: 1;
+}
+
+/* наполнители */
+
+.filter-filling-wrapper {
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+
+.filter-fieldset.filter-fildset-filling {
+  margin-top: 15px;
+}
+
+.filter-list{
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-list-filling {
+  width: 703px;
+}
+
+.filter-label-checkbox {
+  padding-left: 34px;
+}
+
+.filter-label-checkbox::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  width: 27px;
+  height: 25px;
+
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.filter-label-checkbox:hover::before {
+  opacity: 1;
+}
+
+
+.filter-input-checkbox:checked + .filter-label-checkbox::before {
+  background-image: url("../img/checkbox-on.svg");
+
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:checked + .filter-label-checkbox:hover::before {
+  opacity: 1;
+}
+
+/* кнопка фильтра */
+
+.filter-button {
+  align-self: flex-end;
+
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 27px;
+  padding-right: 27px;
+
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #323232;
+
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border: none;
 }
 
 /* каталог на странице каталога */
@@ -1347,6 +1659,7 @@ img {
   flex-wrap: wrap;
   width: 1146px;
   margin: 0 auto;
+  margin-top: 43px;
   padding: 0;
   margin-bottom: 83px;
 }
@@ -1366,7 +1679,7 @@ img {
 .catalog-item {
   position: relative;
   width: 267px;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   box-sizing: border-box;
 
@@ -1424,18 +1737,22 @@ img {
   text-align: center;
 }
 
-.fix1 {
+.catalog-item-title-fix1 {
   width: 260px;
   margin-left: 4px;
 }
 
-.fix2 {
+.catalog-item-title-fix2 {
   width: 247px;
   margin-left: 11px;
 }
 
-.fix3 {
-  width: 230px;
+.catalog-item-title-fix3 {
+  width: 268px;
+}
+
+.catalog-item-price-fix {
+
 }
 
 .catalog-item-title a {
@@ -1458,7 +1775,7 @@ img {
 .catalog-item-price {
   position: absolute;
   left: -2px;
-  bottom: 65px;
+  bottom: 63px;
   margin: 0;
   padding: 0;
 
