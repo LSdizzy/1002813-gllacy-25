@@ -1880,3 +1880,77 @@ img {
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
 }
+
+/* пагинация */
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+
+  width: 198px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  list-style: none;
+}
+
+.pagination-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 26px;
+  margin-top: 2px;
+  margin-right: 3px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+}
+
+.pagination-item-active a {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-prev {
+  cursor: default;
+
+  opacity: 0.2;
+}
+
+.pagination-item-prev:hover,
+.pagination-item-prev:focus,
+.pagination-item-prev:active {
+  cursor: default;
+
+  background-color: none;
+}
+
+.pagination-item-active a:hover,
+.pagination-item-active a:focus,
+.pagination-item-active a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
