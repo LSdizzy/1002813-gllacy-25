@@ -723,7 +723,7 @@ img {
 .news-subscription {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .news {
@@ -833,6 +833,78 @@ img {
 .subscription-button {
   padding-left: 18px;
   padding-right: 18px;
+}
+
+/* Карта */
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+
+  width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 45% 0;
+  background-color: #ffffff;
+}
+ .contacts {
+  width: 303px;
+  min-height: 305px;
+  margin-left: auto;
+  margin-right: 27px;
+
+  box-sizing: border-box;
+
+  color: #322332;
+
+  background-color: #fefefe;
+  border-radius: 15px;
+}
+
+.contacts p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-address {
+  padding-top: 29px;
+  padding-left: 25px;
+}
+
+.contacts-tel {
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-bottom: 25px;
+}
+
+.contacts-telephone {
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.contacts-address-fact {
+  padding-top: 1px;
+}
+
+.contacts-button {
+  margin-left: 27px;
+  padding-right: 28px;
+  padding-left: 27px;
+}
+
+.contacts b {
+  display: block;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 /* Футер */
