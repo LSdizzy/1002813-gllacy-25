@@ -56,7 +56,6 @@ img {
   width: 1146px;
   margin: 0 auto;
   padding: 0;
-  /* padding-bottom: 40px; */
 }
 
 .catalog-container {
@@ -897,8 +896,11 @@ img {
 
 .contacts-button {
   margin-left: 27px;
-  padding-right: 28px;
+  margin-right: 24px;
+  padding-right: 27px;
   padding-left: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contacts a,
@@ -989,14 +991,13 @@ img {
 .footer-links {
   width: 269px;
   margin-top: 7px;
-  column-count: 2;
 }
 
 .footer-links-list {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  width: 305px;
+  width: 324px;
   margin: 0;
   padding: 0;
 
@@ -1004,7 +1005,12 @@ img {
 }
 
 .footer-links-item {
-  min-width: 162px;
+  min-width: 143px;
+  padding-top: 3px;
+}
+
+.footer-links-item:first-child {
+  font-weight: 700;
 }
 
 .footer-links a {
@@ -1027,7 +1033,7 @@ img {
   content: "";
 
   position: absolute;
-  top: 4px;
+  top: 7px;
   left: -22px;
   width: 15px;
   height: 13px;
@@ -1641,7 +1647,7 @@ img {
 /* наполнители */
 
 .filter-filling-wrapper {
-  padding-top: 9px;
+  padding-top: 8px;
   padding-bottom: 9px;
 
   background-color: rgba(255, 255, 255, 0.2);
@@ -1649,8 +1655,8 @@ img {
 }
 
 
-.filter-fieldset.filter-fildset-filling {
-  margin-top: 15px;
+.filter-fieldset.filter-filling {
+  margin-top: 18px;
 }
 
 .filter-list{
@@ -1746,9 +1752,9 @@ img {
   flex-wrap: wrap;
   width: 1146px;
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 45px;
   padding: 0;
-  margin-bottom: 83px;
+  margin-bottom: 40px;
 }
 
 .catalog-list {
@@ -1818,7 +1824,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 9px;
-  width: 266px;
+  width: 265px;
   order: 0;
 
   text-align: center;
@@ -1835,7 +1841,9 @@ img {
 }
 
 .catalog-item-title-fix3 {
-  width: 268px;
+  width: 231px;
+  margin-bottom: 22px;
+  margin-left: 18px;
 }
 
 .catalog-item-price-fix {
@@ -1970,11 +1978,21 @@ img {
 
 /* пагинация */
 
+.pagination-wrapper {
+  position: relative;
+
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 31px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .pagination-list {
   display: flex;
   align-items: center;
 
-  width: 198px;
+  width: 168px;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -2010,10 +2028,21 @@ img {
 }
 
 .pagination-item-prev {
+  position: absolute;
+  top: 7px;
+  right: 185px;
+
   cursor: default;
 
-  opacity: 0.2;
+  opacity: 0.3;
 }
+
+.pagination-item-next {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+}
+
 
 .pagination-item-prev:hover,
 .pagination-item-prev:focus,
