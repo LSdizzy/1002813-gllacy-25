@@ -470,11 +470,9 @@ img {
   cursor: pointer;
 }
 
-
 .slide {
   display: none;
 }
-
 
 .slide-title {
   width: 700px;
@@ -852,6 +850,7 @@ img {
   background-position: 45% 0;
   background-color: #ffffff;
 }
+
  .contacts {
   width: 303px;
   min-height: 305px;
@@ -1069,12 +1068,18 @@ img {
 
 /* всплываеющее окно входа */
 
+.search,
+.login,
+.basket {
+  position: relative;
+}
+
 /* форма поиска */
 
 .search-form {
   display: none;
   position: absolute;
-  right: 427px;
+  right: 0px;
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1128,7 +1133,7 @@ img {
 .login-form {
   display: none;
   position: absolute;
-  right: 326px;
+  right: 0px;
 
   width: 277px;
   min-height: 214px;
@@ -1217,7 +1222,7 @@ img {
 .basket-container {
   display: none;
   position: absolute;
-  right: 216px;
+  right: 0px;
 
   padding-top: 20px;
   width: 539px;
@@ -1414,7 +1419,7 @@ img {
 
 /* сортировка */
 
-.fiilters {
+.filters {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1525,6 +1530,8 @@ img {
 }
 
 .range-controls {
+  position: relative;
+
   padding-top: 17px;
   padding-bottom: 16px;
   padding-left: 22px;
@@ -1557,11 +1564,15 @@ img {
 }
 
 .range-toggle.range-toggle-min {
-  left: 337px;
+  position: absolute;
+  left: 33px;
+  top: 9px;
 }
 
 .range-toggle.range-toggle-max {
-  left: 435px;
+  position: absolute;
+  left: 133px;
+  top: 9px;
 }
 
 .range-toggle:hover,
