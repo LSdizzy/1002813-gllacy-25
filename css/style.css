@@ -943,7 +943,7 @@ img {
 
 .social-button {
   display: inline-block;
-  width: 32px;
+  width: 33px;
   height: 32px;
 
   border: 3px solid rgba(255, 255, 255, 0.5);
@@ -966,7 +966,7 @@ img {
 .twetter {
   background-image: url("../img/twetter.svg");
   background-repeat: no-repeat;
-  background-position: -1px;
+  background-position: 0px;
 }
 
 .insta {
@@ -1600,7 +1600,7 @@ img {
 
 .filter-fat-wrapper {
   padding-top: 10px;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1675,11 +1675,13 @@ img {
 
 .filter-label-checkbox {
   padding-left: 34px;
+  position: relative;
 }
 
 .filter-label-checkbox::before {
   content: "";
   position: absolute;
+  top: -3px;
   display: block;
 
   width: 27px;
