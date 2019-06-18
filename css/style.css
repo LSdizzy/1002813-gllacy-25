@@ -875,21 +875,24 @@ img {
 .contacts-address {
   padding-top: 29px;
   padding-left: 25px;
-}
-
-.contacts-tel {
-  padding-top: 18px;
-  padding-left: 27px;
-  padding-bottom: 25px;
+  padding-right: 120px;
 }
 
 .contacts-telephone {
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-bottom: 24px;
+}
+
+.contacts-telephone-link {
   padding-top: 4px;
   padding-bottom: 2px;
 }
 
 .contacts-address-fact {
   padding-top: 1px;
+  padding-left: 25px;
+  padding-right: 12px;
 }
 
 .contacts-button {
@@ -898,6 +901,7 @@ img {
   padding-left: 27px;
 }
 
+.contacts a,
 .contacts b {
   display: block;
 
