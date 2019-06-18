@@ -136,7 +136,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="filter-fieldset filter-fieldset-sort">
+          <fieldset class="filter-fieldset filter-sort">
             <legend>Сортировка:</legend>
             <div class="filter-select-wrapper">
               <select class="filter-select" name="sorting">
@@ -193,7 +193,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="filter-fieldset filter-fildset-filling">
+          <fieldset class="filter-fieldset filter-filling">
             <legend class="filter-legend">Наполнители:</legend>
             <div class="filter-filling-wrapper">
               <ul class="filter-list filter-list-filling">
@@ -338,11 +338,9 @@
         </ul>
       </section>
 
-      <div class="wrapper">
+      <div class="pagination-wrapper">
+        <a class="pagination-item pagination-item-prev item-disabled">&#8249;</a>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-prev item-disabled ">
-            <a>&#8249;</a>
-          </li>
           <li class="pagination-item pagination-item-active">
             <a>1</a>
           </li>
@@ -358,10 +356,8 @@
           <li class="pagination-item">
             <a href="#">5</a>
           </li>
-          <li class="pagination-item pagination-item-next">
-            <a>&#8250;</a>
-          </li>
         </ul>
+        <a class="pagination-item pagination-item-next">&#8250;</a>
       </div>
     </main>
   </div>
@@ -381,8 +377,8 @@
         <h3 class="visually-hidden">Информация</h3>
         <ul class="footer-links-list">
           <li class="footer-links-item"><a class="heart" href="#">Для поставщиков</a></li>
-          <li class="footer-links-item"><a href="#">О производстве</a></li>
           <li class="footer-links-item"><a href="#">Наши документы</a></li>
+          <li class="footer-links-item"><a href="#">О производстве</a></li>
           <li class="footer-links-item"><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
