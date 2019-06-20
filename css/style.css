@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+
   color: #ffffff;
 
   background-color: #849d8f;
@@ -29,6 +30,7 @@ img {
 
 .body-wrapper {
   width: auto;
+
   background-color: #849d8f;
   background-image: url("../img/slider-item1.png");
   background-repeat: no-repeat;
@@ -73,11 +75,13 @@ img {
   vertical-align: top;
 
   font: inherit;
-  color: #ffffff;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+
+  color: #ffffff;
+
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
 
@@ -108,7 +112,7 @@ img {
 
 .main-navigation {
   display: flex;
-  min-height: 64px;
+  min-height: 65px;
 }
 
 .page-logo {
@@ -132,7 +136,8 @@ img {
 
 .site-navigation-link {
   display: block;
-  margin-top: 8px;
+
+  margin-top: 7px;
   margin-bottom: 8px;
   margin-left: 14px;
   margin-right: 14px;
@@ -166,7 +171,7 @@ img {
 
 .site-navigation-current .site-navigation-link {
   margin: 0;
-  padding-top: 9px;
+  padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 14px;
   padding-right: 14px;
@@ -251,8 +256,6 @@ img {
 
 .login-link {
   position: relative;
-
-  line-height: 2.5;
 
   padding-left: 44px;
   padding-right: 16px;
@@ -886,6 +889,8 @@ img {
 .contacts-telephone-link {
   padding-top: 4px;
   padding-bottom: 2px;
+
+  color: #323232;
 }
 
 .contacts-address-fact {
@@ -917,7 +922,7 @@ img {
 .footer {
   display: flex;
   align-items: center;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 25px;
 }
 
@@ -929,7 +934,7 @@ img {
   margin-right: 225px;
 }
 
-.footer-social ul {
+.social-button-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -943,7 +948,7 @@ img {
 
 .social-button {
   display: inline-block;
-  width: 33px;
+  width: 32px;
   height: 32px;
 
   border: 3px solid rgba(255, 255, 255, 0.5);
@@ -966,7 +971,6 @@ img {
 .twetter {
   background-image: url("../img/twetter.svg");
   background-repeat: no-repeat;
-  background-position: 0px;
 }
 
 .insta {
@@ -1034,7 +1038,7 @@ img {
 
   position: absolute;
   top: 7px;
-  left: -22px;
+  left: -20px;
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg");
@@ -1375,6 +1379,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  margin: -1px;
 
   list-style: none;
 
@@ -1416,8 +1421,8 @@ img {
 .catalog-title {
   margin: 0;
   padding: 0;
-  margin-top: 3px;
-  margin-bottom: 29px;
+  margin-top: 5px;
+  margin-bottom: 25px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1453,7 +1458,7 @@ img {
 }
 
 .filter-form legend {
-  padding-bottom: 6px;
+  padding-bottom: 7px;
   padding-left: 16px;
 
   font-size: 14px;
@@ -1575,7 +1580,7 @@ img {
 
 .range-toggle.range-toggle-min {
   position: absolute;
-  left: 33px;
+  left: 36px;
   top: 9px;
 }
 
@@ -1595,12 +1600,13 @@ img {
 /* фильтр по жирности */
 
 .filter-fat {
-  width: 415px;
+  width: 418px;
 }
 
 .filter-fat-wrapper {
   padding-top: 10px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
+  padding-left: 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1613,7 +1619,12 @@ img {
 }
 
 .filter-label-radio {
-  padding-left: 30px;
+  padding-left: 29px;
+  margin-right: 22px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .filter-label-radio::before {
@@ -1624,7 +1635,7 @@ img {
   width: 26px;
   height: 25px;
   top: -2px;
-  left: -7px;
+  left: -4px;
 
   opacity: 0.8;
 
@@ -1647,8 +1658,9 @@ img {
 /* наполнители */
 
 .filter-filling-wrapper {
-  padding-top: 8px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1656,12 +1668,11 @@ img {
 
 
 .filter-fieldset.filter-filling {
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .filter-list{
   display: flex;
-  justify-content: space-evenly;
 
   margin: 0;
   padding: 0;
@@ -1670,12 +1681,20 @@ img {
 }
 
 .filter-list-filling {
-  width: 703px;
+  width: 687px;
 }
 
 .filter-label-checkbox {
-  padding-left: 34px;
   position: relative;
+  padding-left: 34px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter-item-checkbox {
+  margin-right: 19px;
 }
 
 .filter-label-checkbox::before {
@@ -1712,8 +1731,8 @@ img {
 .filter-button {
   align-self: flex-end;
 
-  padding-top: 6px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 27px;
   padding-right: 27px;
 
@@ -1738,6 +1757,8 @@ img {
 }
 
 .filter-button:active {
+  min-height: 36px;
+
   color: #323232;
 
   background-color: #ededed;
@@ -1754,7 +1775,7 @@ img {
   flex-wrap: wrap;
   width: 1146px;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 40px;
   padding: 0;
   margin-bottom: 40px;
 }
@@ -1825,8 +1846,13 @@ img {
 .catalog-item-title {
   margin: 0;
   padding: 0;
-  margin-top: 9px;
+  margin-top: 10px;
   width: 265px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
   order: 0;
 
   text-align: center;
@@ -1840,6 +1866,7 @@ img {
 .catalog-item-title-fix2 {
   width: 247px;
   margin-left: 11px;
+  margin-top: 11px;
 }
 
 .catalog-item-title-fix3 {
@@ -1994,7 +2021,7 @@ img {
   display: flex;
   align-items: center;
 
-  width: 168px;
+  width: 167px;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -2009,7 +2036,7 @@ img {
   width: 27px;
   height: 26px;
   margin-top: 2px;
-  margin-right: 3px;
+  margin-right: 2px;
 
   font-size: 16px;
   font-weight: 500;
