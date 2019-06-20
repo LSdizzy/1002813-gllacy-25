@@ -257,6 +257,8 @@ img {
 .login-link {
   position: relative;
 
+  line-height: 2.5;
+
   padding-left: 44px;
   padding-right: 16px;
   margin-bottom: 4px;
