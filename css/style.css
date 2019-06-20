@@ -724,7 +724,7 @@ img {
 
 .news-subscription {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 39px;
 }
 
@@ -733,6 +733,7 @@ img {
   min-height: 220px;
   padding-left: 19px;
   padding-right: 20px;
+  margin-right: 26px;
   box-sizing: border-box;
 
   color: #323232;
