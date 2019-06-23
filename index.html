@@ -261,27 +261,30 @@
     </div>
   </div>
 
-  <section class="modal modal-feedback">
-    <h2 class="visually-hidden">Обратная связь</h2>
-    <p class="feedback-title">Мы обязательно вам ответим!</p>
-    <span class="close"></span>
-    <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="visually-hidden" for="name"></label>
-        <input id="name" class="user-name" type="text" name="name" placeholder="Как вас зовут?">
-      </p>
-      <p>
-        <label class="visually-hidden" for="email"></label>
-        <input id="email" class="user-email" type="email" name="url" placeholder="Ваша почта для ответа?" required>
-      </p>
-      <p>
-        <label class="visually-hidden" for="textarea-text"></label>
-        <textarea id="textarea-text" class="textarea" name="textarea" placeholder="Напишите что-нибудь..." rows="4" cols="50"></textarea>
-      </p>
-      <button class="button feedback-button" type="submit">Отправить</button>
-    </form>
+  <section class="modal-feedback-wrapper">
+    <div class="modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback-title">Мы обязательно вам ответим!</p>
+      <a class="close" href="#"><span class="visually-hidden">Отменить</span></a>
+      <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="name"></label>
+          <input id="name" class="user-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="email"></label>
+          <input id="email" class="user-email" type="email" name="url" placeholder="Ваша почта для ответа?" required>
+        </p>
+        <p>
+          <label class="visually-hidden" for="textarea-text"></label>
+          <textarea id="textarea-text" class="textarea" name="textarea" placeholder="Напишите что-нибудь..." rows="4" cols="50"></textarea>
+        </p>
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 
+  <script src="js/feedback.js"></script>
 
 
 </body>
