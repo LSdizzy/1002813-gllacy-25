@@ -26,14 +26,13 @@ close.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("modal-show");
   wrapper.classList.remove("modal-show-wrapper");
-  if (modal.classList.contains("modal-error")) {
-    modal.classList.remove("modal-error");
-  }
+  modal.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function(evt) {
   if (!login.value || mail.value) {
     evt.preventDefault();
+    modal.classList.add("modal-error");
     if (modal.classList.contains("modal-error")) {
       modal.classList.remove("modal-error");
     }
