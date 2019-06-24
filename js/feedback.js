@@ -24,8 +24,8 @@ button.addEventListener("click", function(evt) {
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modal.classList.add("modal-show");
-  modal.classList.add("modal-show-wrapper");
+  modal.classList.remove("modal-show");
+  wrapper.classList.remove("modal-show-wrapper");
   if (modal.classList.contains("modal-error")) {
     modal.classList.remove("modal-error");
   }
