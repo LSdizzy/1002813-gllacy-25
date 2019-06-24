@@ -4,16 +4,18 @@ var wrapper = document.querySelector(".modal-feedback-wrapper");
 var form = modal.querySelector("form");
 var close = document.querySelector(".close");
 var login = modal.querySelector("[name = name]");
-var mail = modal.querySelector("[name = url]");
+var mail = modal.querySelector("[name = email]");
+var text = modal.querySelector("[name = textarea-text]");
 var storageLogin = localStorage.getItem("user-name");
 var storageMail = localStorage.getItem("user-email");
-
+var isStorageSupport = true;
+var storage = "";
 
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
   wrapper.classList.add("modal-show-wrapper");
-  if (storageLogin && storageMail) {
+  if (storageLogin || storageMail) {
     login.value = storageLogin;
     mail.value = storageMail;
     text.focus();
