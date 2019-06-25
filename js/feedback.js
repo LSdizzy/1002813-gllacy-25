@@ -1,10 +1,10 @@
 var button = document.querySelector(".contacts-button");
 var modal = document.querySelector(".modal-feedback");
 var wrapper = document.querySelector(".modal-feedback-wrapper");
-var form = modal.querySelector("form");
+var form = modal.querySelector(".feedback-form");
 var close = document.querySelector(".close");
 var login = modal.querySelector("[name = name]");
-var mail = modal.querySelector("[name = email]");
+var mail = modal.querySelector("[name = url]");
 var text = modal.querySelector("[name = textarea-text]");
 var storageLogin = localStorage.getItem("user-name");
 var storageMail = localStorage.getItem("user-email");
@@ -32,12 +32,9 @@ close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!login.value || mail.value) {
+  if (!login.value || !mail.value) {
     evt.preventDefault();
-    modal.classList.add("modal-error");
-    if (modal.classList.contains("modal-error")) {
-      modal.classList.remove("modal-error");
-    }
+    modal.classList.remove("modal-error");
     modal.offsetWidth = modal.offsetWidth;
     modal.classList.add("modal-error");
   } else {
