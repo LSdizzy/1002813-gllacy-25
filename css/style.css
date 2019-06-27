@@ -1491,6 +1491,7 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
   width: 192px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -1517,12 +1518,13 @@ img {
   display: none;
 }
 
-
-.filter option {
+.filter-select option {
   font-weight: 500;
+
+  color: #323232;
 }
 
-.filter-select:hover::-ms-expand  {
+.filter-select:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1537,7 +1539,7 @@ img {
   border: none;
 }
 
-.filter-select:focus::-ms-expand  {
+.filter-select:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1553,9 +1555,6 @@ img {
   border: none;
 }
 
-option {
-  color: #323232;
-}
 
 .filter-range {
   width: 220px;
