@@ -419,7 +419,7 @@ img {
   font-weight: 700;
   text-align: right;
 
-  border: none;
+  text-decoration: none;
 }
 
 .slider {
@@ -848,7 +848,7 @@ img {
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-position: -6px 0;
+  background-position: 1px -1px;
   background-color: #ffffff;
 }
 
@@ -856,7 +856,7 @@ img {
   width: 303px;
   min-height: 305px;
   margin-left: auto;
-  margin-right: 33px;
+  margin-right: 32px;
 
   box-sizing: border-box;
 
@@ -920,6 +920,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
+  color: #fefefe;
 }
 
 .contacts a,
@@ -1224,10 +1226,14 @@ img {
   position: absolute;
   width: 102px;
   height: 44px;
-  padding-top: 13px;
+  padding-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 19px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 
   color: #fefefe;
 
@@ -1511,6 +1517,7 @@ img {
   display: none;
 }
 
+
 .filter option {
   font-weight: 500;
 }
@@ -1544,6 +1551,10 @@ img {
 
   outline: none;
   border: none;
+}
+
+option {
+  color: #323232;
 }
 
 .filter-range {
@@ -2027,6 +2038,7 @@ img {
   padding-right: 15px;
   padding-bottom: 0;
 
+  font-size: 16px;
   line-height: 24px;
 
   border: 1px solid rgba(178, 178, 178, 0.52);
