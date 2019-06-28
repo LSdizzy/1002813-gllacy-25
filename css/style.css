@@ -1473,11 +1473,10 @@ img {
 
   cursor: pointer;
 
-  background-image: url("../img/icon-dawn-white.svg");
-  background-repeat: no-repeat;
+
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  background-position: 167px 13px;
+
 }
 
 .filter-select-wrapper:hover,
@@ -1506,6 +1505,9 @@ img {
 
   color: #ffffff;
 
+  background-image: url("../img/icon-dawn-white.svg");
+  background-repeat: no-repeat;
+  background-position: 167px 13px;
   cursor: pointer;
 
   background-color: transparent;
@@ -1524,21 +1526,7 @@ img {
   color: #323232;
 }
 
-.filter-select:hover {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  color: #323232;
-
-  background-image: url("../img/icon-down-black.svg");
-  background-repeat: no-repeat;
-  background-position: 178px;
-
-  outline: none;
-  border: none;
-}
-
+.filter-select:hover,
 .filter-select:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1548,13 +1536,11 @@ img {
 
   background-image: url("../img/icon-down-black.svg");
   background-repeat: no-repeat;
-  background-position: 178px;
-  background-color: #ffffff;
+  background-position: 167px;
 
   outline: none;
   border: none;
 }
-
 
 .filter-range {
   width: 220px;
@@ -1664,12 +1650,11 @@ img {
   opacity: 1;
 }
 
-.filter-label-radio:disabled::before {
+.filter-input-radio:disabled + .filter-label-radio::before {
   opacity: 0.4;
-  background-color: #ffffff;
 }
 
-.filter-input-radio:checked + .filter-label-radio::before{
+.filter-input-radio:checked + .filter-label-radio::before {
   background-image: url("../img/radio-on.svg");
 }
 
@@ -1690,7 +1675,7 @@ img {
   margin-top: 16px;
 }
 
-.filter-list{
+.filter-list {
   display: flex;
 
   margin: 0;
