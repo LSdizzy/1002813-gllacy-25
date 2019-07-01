@@ -313,6 +313,28 @@ img {
           box-sizing: border-box;
 }
 
+.basket-link-full {
+  position: relative;
+
+  width: 117px;
+  padding-left: 45px;
+  padding-top: 9px;
+  margin-bottom: 4px;
+
+  font-weight: 500;
+
+  color: #323232;
+
+  background-image: url("../img/basket-full.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: 17px;
+
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
+}
+
 .basket-link:hover,
 .basket-link:focus {
   color: #323232;
@@ -445,7 +467,7 @@ img {
   text-align: right;
 }
 
-.header-contacts span {
+.header-telephone {
   display: block;
   margin-top: 4px;
 
@@ -453,6 +475,8 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-align: right;
+
+  color: #ffffff;
 
   border-bottom: none;
   text-decoration: none;
