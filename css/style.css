@@ -1053,8 +1053,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
 
-  padding-top: 19px;
+  height: 55px;
+  padding-top: 21px;
   padding-bottom: 15px;
 }
 
@@ -2140,7 +2142,7 @@ img {
   display: none;
   position: fixed;
   top: 18%;
-  left: 31.5%;
+  left: 35%;
   width: 478px;
   height: 441px;
 
